@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Blog{% endblock %}</title>
+		<meta charset="utf-8">
+    </head>
+	
+	
+    <body>
+		<div class="header">
+			<h1> Hello! </h1>
+		</div>
+		<div class="menu">
+			<table>
+				<tr>
+					<td><a href="/blog/"> Blog </a></td>
+					<td><a href="/blog/add_post"> Add post </a></td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<div class="content">
+			{% block body_block %}{% endblock %}
+		</div>
+		
+		
+		<div class="footer">
+            <p>Template &copy;</p>
+        </div>
+    </body>
+</html>
